@@ -1,0 +1,114 @@
+.caixa {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: #343434;*/
+}
+.caixa--container {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translate(-20vw, -5vh);
+}
+
+.caixa--container--titulo {
+    font-size: 4vw;
+    color: aliceblue;
+    transform: translate(-5vw, 0);
+    letter-spacing: .5vw;
+}
+.caixa--container--subtitulo {
+    font-size: 1.6vw;
+    transform: translate(6vw, 2vh) scale(1.5);
+    transition: transform 0.8s ease;
+    color: #b300d9;
+}
+.caixa--container--subtitulo:hover {
+    transform: translate(2vw, 2vh) scale(1.5);
+}
+.caixa--container--texto {
+    width: 35vw;
+    font-size: 1vw;
+    font-weight: bold;
+    margin-top: 15vh;
+    line-height: 1.6;
+    color: aliceblue;
+    transform: scale(1.3) translate(5vw, 5vh);
+}
+
+
+@media screen and (max-width: 768px) {
+    .caixa {
+        top: 2rem;
+    }
+
+    .caixa--container--titulo {
+        font-size: 6vw;
+    }
+
+    .caixa--container--subtitulo {
+        font-size: 2.4vw;
+        transform: translate(0vw, 2vh) scale(1.2);
+    }
+    .caixa--container--subtitulo:hover {
+        transform: translate(-9vw, 2vh) scale(1.2);
+    }
+
+    .caixa--container--texto {
+        width: 60vw;
+        font-size: 1.7vw;
+        margin-top: 10vh;
+        transform: scale(1.1) translate(6vw, 20vh);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .caixa--container--titulo {
+        font-size: 10vw;
+        transform: translate(10vw, 10vh);
+    }
+
+    .caixa--container--subtitulo {
+        font-size: 3.4vw;
+        transform: translate(20vw, 10vh) scale(1.2);
+    }
+    .caixa--container--subtitulo:hover {
+        transform: translate(6vw, 10vh) scale(1.2);
+    }
+
+    .caixa--container--texto {
+        width: 75vw;
+        font-size: 3vw;
+        margin-top: 10vh;
+        transform: scale(1.1) translate(18vw, 17vh);
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .caixa--container--titulo {
+        font-size: 10vw;
+        transform: translate(15vw, 12vh);
+        letter-spacing: 1vw;
+    }
+
+    .caixa--container--subtitulo {
+        font-size: 4vw;
+        transform: translate(20vw, 12vh) scale(1.2);
+    }
+    .caixa--container--subtitulo:hover {
+        transform: translate(8vw, 12vh) scale(1.3);
+    }
+
+    .caixa--container--texto {
+        width: 83vw;
+        font-size: 4vw;
+        margin-top: 8vh;
+        transform: scale(1) translate(18vw, 15vh);
+    }
+}

@@ -1,0 +1,51 @@
+.header-hamburguer {
+    display: none;
+}
+.cabecalho--botao--hamburguer {
+    display: none;
+}
+
+@media screen and (max-width: 376px) {
+    .header-hamburguer {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        background-color: #2a033ded;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: -100vw;
+        transition: all 0.5s ease;
+    }
+    .header-hamburguer1 {
+        left: 0;
+    }
+    .header-hamburguer .cabecalho--botao {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        transform: translate(0, 20vh);
+    }
+    .header-hamburguer .cabecalho--botao li a {
+        font-size: 6.5vw !important;
+    }
+
+    .cabecalho--botao--hamburguer {
+        width: 20vw;
+        display: inline;
+        position: absolute;
+        right: 5vw;
+        top: 3vh;
+        z-index: 9997;
+    }
+
+    .cabecalho--botao--hamburguer--remover {
+        width: 8vw;
+        height: 6vh;
+        position: absolute;
+        left: 85vw;
+        top: 5vh;
+        z-index: 9998;
+    }
+}

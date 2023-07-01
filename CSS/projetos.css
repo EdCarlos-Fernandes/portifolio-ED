@@ -1,0 +1,83 @@
+.container {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px 20px;
+    justify-items: center;
+    padding-top: 15vh;
+    margin-left: 3vw;
+}
+.container--titulo {
+    padding: 25vh 20vw;
+    border-bottom: 1px solid aliceblue;
+    font-size: 5vw;
+    color: aliceblue;
+    background-image: url(../IMGS/fundo.jpg);
+    background-size: cover;
+    background-position: 0 -220px;
+    background-attachment: fixed;
+    box-shadow: 0 5px 12px 0 darkviolet;
+    transition: all 0.5s ease;
+}
+.container--row {
+    background-color: #b300d9;
+    border-radius: 15px;
+    border: 1px solid black;
+    height: 25rem;
+    width: 17rem;
+}
+
+
+
+
+.btn-fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    visibility: hidden;
+    z-index: 999;
+    font-size: 4vw;
+    color: aliceblue;
+}
+.visible {
+    transition: visibility .5s ease;
+    visibility: visible !important;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .container--titulo {
+        background-position: 0 -25vh;
+        font-size: 8vw;
+        padding: 17vw;
+        padding-left: 35vw;
+    }
+}
+@media screen and (max-width: 769px) {
+    .container--titulo {
+        background-position: 0 -18vh;
+        padding: 16vw;
+        font-size: 10vw;
+        padding-left: 30vw;
+    }
+}
+@media screen and (max-width: 580px) {
+    .container--titulo {
+        background-position: 0 -18vh;
+        font-size: 11vw;
+        padding: 12vh;
+    }
+}
+@media screen and (max-width: 380px) {
+    .container--titulo {
+        background-position: 0 -18vh;
+        font-size: 14vw;
+        padding-left: 25vw;
+    }
+}
+@media screen and (max-width: 277px) {
+    .container--titulo {
+        width: 100vw;
+    }
+}
