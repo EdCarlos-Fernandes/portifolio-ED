@@ -23,7 +23,7 @@ Para utilizar o código, siga estas etapas:
 
 Se você deseja adicionar, remover ou modificar os projetos exibidos, siga estas instruções:
 
-1. Abra o arquivo `projetos.js` em um editor de código.
+1. Abra o arquivo `projetosConstructor.js` em um editor de código.
 2. Localize o array `trabalhos` na parte superior do arquivo.
 3. Adicione, remova ou modifique os objetos de projeto dentro do array de acordo com suas necessidades.
 4. Salve as alterações e atualize a página no navegador para ver as modificações refletidas.
